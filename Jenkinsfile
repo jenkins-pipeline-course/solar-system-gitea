@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Node Version') {
             steps {
-                sh 'node -v'
+                sh 'npm install --no-audit'
             }
         }
     }
